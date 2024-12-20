@@ -28,6 +28,6 @@
 | Indoor Cam | Short for SwitchBot Indoor Cam Model No. W1301200                  | - |
 | Pan/Tilt Cam | Short for SwitchBot Pan/Tilt Cam Model No. W1801200                  | - |
 | Pan/Tilt Cam 2K | Short for SwitchBot Pan/Tilt Cam 2K Model No. W3101100                  | - |
-| Blind Tilt | Short for SwitchBot Blind Tilt Model No. W2701600 | No |
+| Blind Tilt | Short for SwitchBot Blind Tilt Model No. W2701600 | - |
 
 
