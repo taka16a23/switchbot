@@ -1,4 +1,3 @@
-import sys
 from switchbot.client import SwitchBotClient
 from switchbot.device_factory import DeviceFactory
 
@@ -15,6 +14,22 @@ class SwitchBot(object):
         DevicesList is a list.
         Responsibility:
         """
+
+        def get_by_deviceid(self, device_id):
+            """Get by deviceid
+
+            get_by_deviceid(device_id)
+
+            @Arguments:
+            - `device_id`: (str) device id
+
+            @Return: device instance. None if not exists.
+            """
+            for device in self:
+                if device.device_id == device_id:
+                    return device
+            return None
+
 
     def __init__(self, token, secret):
         """
