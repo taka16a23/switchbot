@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 r"""Name: __init__.py
 
-
+Document
+https://github.com/OpenWonderLabs/SwitchBotAPI
 """
 from switchbot._switchbot import SwitchBot
 
