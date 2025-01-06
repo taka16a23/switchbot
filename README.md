@@ -1,3 +1,11 @@
+## 依存関係
+
+・requests
+
+```bash
+pip install requests
+```
+
 ## Supported device
 
 | Term                         | Description                                                  |Tested |
@@ -30,4 +38,6 @@
 | Pan/Tilt Cam 2K | Short for SwitchBot Pan/Tilt Cam 2K Model No. W3101100                  | - |
 | Blind Tilt | Short for SwitchBot Blind Tilt Model No. W2701600 | - |
 
+## ライセンス
+MIT
 
