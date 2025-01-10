@@ -58,5 +58,5 @@ class Device(object):
         return self._client.post('devices/{}/commands'.format(self.device_id), json=json)
 
     def __repr__(self):
-        return '{}(device_id={}, device_name={}, DEVICE_TYPE={}, cloud_enabled={}, hub_id={})'.format(
+        return '{}(device_id={}, device_name="{}", DEVICE_TYPE="{}", cloud_enabled={}, hub_id={})'.format(
             self.__class__.__name__, self.device_id, self.device_name, self.DEVICE_TYPE, self.cloud_enabled, self.hub_id)

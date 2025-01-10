@@ -15,6 +15,7 @@ from switchbot.devices import (
     ColorBulb,
     Curtain3,
     Curtain,
+    Device,
     FloorCleaningRobotS10,
     Humidifier2,
     Humidifier,
@@ -81,13 +82,14 @@ class DeviceFactory(object):
         device_type = device_info.get('deviceType', None)
         if device_type is None:
             return None
-        klass = DeviceFactory.DEVICES.get(device_type, None)
-        if klass is None:
-            return None
         device_id = device_info.get('deviceId', None)
         device_name = device_info.get('deviceName', '')
         cloud_enabled = device_info.get('enableCloudService', None)
         hubdevice_id = device_info.get('hubDeviceId', None)
+        klass = DeviceFactory.DEVICES.get(device_type, None)
+        if klass is None:
+            return Device(client, device_id, device_name=device_name,
+                          cloud_enabled=cloud_enabled, hub_id=hubdevice_id)
         return klass(client, device_id, device_name=device_name,
                      cloud_enabled=cloud_enabled, hub_id=hubdevice_id)
 

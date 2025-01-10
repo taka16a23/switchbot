@@ -16,6 +16,7 @@ from switchbot.devices.circulator_fan import CirculatorFan
 from switchbot.devices.color_bulb import ColorBulb
 from switchbot.devices.curtain3 import Curtain3
 from switchbot.devices.curtain import Curtain
+from switchbot.devices.device import Device
 from switchbot.devices.floor_cleaning_robot_s10 import FloorCleaningRobotS10
 from switchbot.devices.humidifier2 import Humidifier2
 from switchbot.devices.humidifier import Humidifier
